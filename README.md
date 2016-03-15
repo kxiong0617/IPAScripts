@@ -1,5 +1,4 @@
 # IPAScripts
 Selenium scripts for IPA
 
-Intro:
-Here, you will find robot scripts for testing IPA Admin, IPD, and Inbasket.
+IPA is currently using the Robot Framework using which uses selenium for their automation testing method.
