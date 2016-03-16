@@ -1,0 +1,2 @@
+*** Variables ***
+${InhasketLoginButton}    xpath=//button[@type='button']    # Login button on Inbasket login page.

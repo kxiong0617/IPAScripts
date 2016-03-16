@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20160308 10:02:57.203" generator="Robot 2.8.7 (Python 2.7.10 on win32)">
+<suite source="C:\Python27\Scripts\Inbasket\Inbasket.robot" id="s1" name="Inbasket">
+<test id="s1-t1" name="UserLogin_ValidCredentials">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${InbasketURL}</arg>
+</arguments>
+<msg timestamp="20160308 10:02:57.438" level="INFO">Opening browser 'firefox' to base url 'http://usspnkxiong01.infor.com:8080/lpa1/Lpa/home?csk.PfiInbasketLandingPage=Infor'</msg>
+<msg timestamp="20160308 10:02:59.732" level="DEBUG">POST http://127.0.0.1:60443/hub/session {"desiredCapabilities": {"platform": "ANY", "browserName": "firefox", "version": "", "marionette": false, "javascriptEnabled": true}}</msg>
+<msg timestamp="20160308 10:03:00.252" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160308 10:03:00.252" level="DEBUG">POST http://127.0.0.1:60443/hub/session/6d858927-9e5f-4c28-9f1a-475dc912c844/timeouts/async_script {"sessionId": "6d858927-9e5f-4c28-9f1a-475dc912c844", "ms": 5000.0}</msg>
+<msg timestamp="20160308 10:03:00.317" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160308 10:03:00.317" level="DEBUG">POST http://127.0.0.1:60443/hub/session/6d858927-9e5f-4c28-9f1a-475dc912c844/timeouts/implicit_wait {"sessionId": "6d858927-9e5f-4c28-9f1a-475dc912c844", "ms": 0.0}</msg>
+<msg timestamp="20160308 10:03:00.345" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160308 10:03:00.345" level="DEBUG">POST http://127.0.0.1:60443/hub/session/6d858927-9e5f-4c28-9f1a-475dc912c844/url {"url": "http://usspnkxiong01.infor.com:8080/lpa1/Lpa/home?csk.PfiInbasketLandingPage=Infor", "sessionId": "6d858927-9e5f-4c28-9f1a-475dc912c844"}</msg>
+<msg timestamp="20160308 10:03:00.424" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160308 10:03:00.424" level="DEBUG">Opened browser with session id 6d858927-9e5f-4c28-9f1a-475dc912c844</msg>
+<status status="PASS" endtime="20160308 10:03:00.424" starttime="20160308 10:02:57.438"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=userId</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20160308 10:03:00.426" level="INFO">Typing text 'lawson' into text field 'id=userId'</msg>
+<msg timestamp="20160308 10:03:00.427" level="DEBUG">POST http://127.0.0.1:60443/hub/session/6d858927-9e5f-4c28-9f1a-475dc912c844/elements {"using": "id", "sessionId": "6d858927-9e5f-4c28-9f1a-475dc912c844", "value": "userId"}</msg>
+<msg timestamp="20160308 10:03:01.027" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160308 10:03:01.028" level="DEBUG">POST http://127.0.0.1:60443/hub/session/6d858927-9e5f-4c28-9f1a-475dc912c844/element/{88802076-b626-49f3-a111-4949b50e3ab7}/clear {"sessionId": "6d858927-9e5f-4c28-9f1a-475dc912c844", "id": "{88802076-b626-49f3-a111-4949b50e3ab7}"}</msg>
+<msg timestamp="20160308 10:03:01.047" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160308 10:03:01.048" level="DEBUG">POST http://127.0.0.1:60443/hub/session/6d858927-9e5f-4c28-9f1a-475dc912c844/element/{88802076-b626-49f3-a111-4949b50e3ab7}/value {"sessionId": "6d858927-9e5f-4c28-9f1a-475dc912c844", "id": "{88802076-b626-49f3-a111-4949b50e3ab7}", "value": ["l", "a", "w", "s", "o", "n"]}</msg>
+<msg timestamp="20160308 10:03:01.080" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20160308 10:03:01.080" starttime="20160308 10:03:00.425"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Password">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20160308 10:03:01.081" level="INFO">Typing password into text field 'id=password'</msg>
+<msg timestamp="20160308 10:03:01.081" level="DEBUG">POST http://127.0.0.1:60443/hub/session/6d858927-9e5f-4c28-9f1a-475dc912c844/elements {"using": "id", "sessionId": "6d858927-9e5f-4c28-9f1a-475dc912c844", "value": "password"}</msg>
+<msg timestamp="20160308 10:03:01.089" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160308 10:03:01.090" level="DEBUG">POST http://127.0.0.1:60443/hub/session/6d858927-9e5f-4c28-9f1a-475dc912c844/element/{8dfcf947-b410-44a3-a577-855a06e2309d}/clear {"sessionId": "6d858927-9e5f-4c28-9f1a-475dc912c844", "id": "{8dfcf947-b410-44a3-a577-855a06e2309d}"}</msg>
+<msg timestamp="20160308 10:03:01.101" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160308 10:03:01.102" level="DEBUG">POST http://127.0.0.1:60443/hub/session/6d858927-9e5f-4c28-9f1a-475dc912c844/element/{8dfcf947-b410-44a3-a577-855a06e2309d}/value {"sessionId": "6d858927-9e5f-4c28-9f1a-475dc912c844", "id": "{8dfcf947-b410-44a3-a577-855a06e2309d}", "value": ["l", "a", "w", "s", "o", "n"]}</msg>
+<msg timestamp="20160308 10:03:01.131" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20160308 10:03:01.132" starttime="20160308 10:03:01.080"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//button[@type='button']</arg>
+</arguments>
+<msg timestamp="20160308 10:03:01.133" level="INFO">Clicking button 'xpath=//button[@type='button']'.</msg>
+<msg timestamp="20160308 10:03:01.133" level="DEBUG">POST http://127.0.0.1:60443/hub/session/6d858927-9e5f-4c28-9f1a-475dc912c844/elements {"using": "xpath", "sessionId": "6d858927-9e5f-4c28-9f1a-475dc912c844", "value": "//button[@type='button']"}</msg>
+<msg timestamp="20160308 10:03:01.145" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160308 10:03:01.146" level="DEBUG">GET http://127.0.0.1:60443/hub/session/6d858927-9e5f-4c28-9f1a-475dc912c844/element/{5a702ac0-dfd9-414e-b6d4-31fa05d4d4ca}/name {"sessionId": "6d858927-9e5f-4c28-9f1a-475dc912c844", "id": "{5a702ac0-dfd9-414e-b6d4-31fa05d4d4ca}"}</msg>
+<msg timestamp="20160308 10:03:01.151" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160308 10:03:01.153" level="DEBUG">POST http://127.0.0.1:60443/hub/session/6d858927-9e5f-4c28-9f1a-475dc912c844/elements {"using": "xpath", "sessionId": "6d858927-9e5f-4c28-9f1a-475dc912c844", "value": "//button[@type='button']"}</msg>
+<msg timestamp="20160308 10:03:01.159" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160308 10:03:01.159" level="DEBUG">GET http://127.0.0.1:60443/hub/session/6d858927-9e5f-4c28-9f1a-475dc912c844/element/{5a702ac0-dfd9-414e-b6d4-31fa05d4d4ca}/name {"sessionId": "6d858927-9e5f-4c28-9f1a-475dc912c844", "id": "{5a702ac0-dfd9-414e-b6d4-31fa05d4d4ca}"}</msg>
+<msg timestamp="20160308 10:03:01.166" level="DEBUG">Finished Request</msg>
+<msg timestamp="20160308 10:03:01.166" level="DEBUG">POST http://127.0.0.1:60443/hub/session/6d858927-9e5f-4c28-9f1a-475dc912c844/element/{5a702ac0-dfd9-414e-b6d4-31fa05d4d4ca}/click {"sessionId": "6d858927-9e5f-4c28-9f1a-475dc912c844", "id": "{5a702ac0-dfd9-414e-b6d4-31fa05d4d4ca}"}</msg>
+<msg timestamp="20160308 10:03:02.683" level="DEBUG">Finished Request</msg>
+<status status="PASS" endtime="20160308 10:03:02.683" starttime="20160308 10:03:01.132"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20160308 10:03:02.684" critical="yes" starttime="20160308 10:02:57.435"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20160308 10:03:02.691" starttime="20160308 10:02:57.203"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" pass="1" id="s1" name="Inbasket">Inbasket</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20160308 10:02:57.233" level="WARN">Imported resource file 'C:\dev\RobotScripts\IPA.txt' is empty.</msg>
+</errors>
+</robot>
